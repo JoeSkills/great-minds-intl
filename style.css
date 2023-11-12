@@ -154,10 +154,6 @@ body {
   text-decoration: none;
 }
 
-.header-cta:hover {
-  text-decoration: underline;
-}
-
 .mobile-nav-menu {
   display: none;
 }
@@ -304,8 +300,18 @@ body {
   background-color: #1a1a1a;
 }
 
+.services > div > div:hover {
+  transform: translateY(0.1875rem);
+}
+
+.services > div > div > h3 {
+  text-transform: uppercase;
+  color: #d4af37;
+}
+
 .services > div > div > p {
   width: 10rem;
+  color: #ccc;
 }
 
 .services > div > div > a {
@@ -465,6 +471,7 @@ body {
   left: 0;
   width: 100%;
   padding: 3.125rem 2.1875rem;
+  padding-bottom: 0.625rem;
 }
 
 .footer > div {
