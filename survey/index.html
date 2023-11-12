@@ -9,9 +9,20 @@
   </head>
   <body>
     <header>
-      <h1>Training Application form</h1>
-      <h2>Become Part Of Great Minds Today</h2>
+      <h1>Golden Hearts Survey</h1>
+      <h2>50 Most Influential People In Each State</h2>
+      <p>
+        We are carrying out a survey to determine the 50 Most Influential People
+        in each state, FCT and the following sectors: Education Sector,
+        Healthcare sector, Banking & Finance Sector, Petroleum sector, Industry,
+        Trade & Investment sector, Construction & Engineering sector, Mass
+        Communication sector, Information & Communication Technology (ICT)
+        sector, Entertainment Sector, Public Service Sector, Transport &
+        Aviation Sector, Legal & Jurisprudence Sector and Sports Sector.
+      </p>
+      <h4 class="form-heading">Nomination Form</h4>
     </header>
+
     <div class="application-form-wrapper">
       <form
         class="application-form"
@@ -20,59 +31,182 @@
         enctype="multipart/form-data"
       >
         <div>
-          <label> First Name </label>
+          <label> Name of State </label>
+          <select name="state" id="state">
+            <option value="Abia">Abia</option>
+            <option value="Adamawa">Adamawa</option>
+            <option value="Akwa Ibom">Akwa Ibom</option>
+            <option value="Anambra">Anambra</option>
+            <option value="Bauchi">Bauchi</option>
+            <option value="Bayelsa">Bayelsa</option>
+            <option value="Benue">Benue</option>
+            <option value="Borno">Borno</option>
+            <option value="Cross River">Cross River</option>
+            <option value="Delta">Delta</option>
+            <option value="Ebonyi">Ebonyi</option>
+            <option value="Edo">Edo</option>
+            <option value="Ekiti">Ekiti</option>
+            <option value="Enugu">Enugu</option>
+            <option value="FCT">Federal Capital Territory (FCT)</option>
+            <option value="Gombe">Gombe</option>
+            <option value="Imo">Imo</option>
+            <option value="Jigawa">Jigawa</option>
+            <option value="Kaduna">Kaduna</option>
+            <option value="Kano">Kano</option>
+            <option value="Katsina">Katsina</option>
+            <option value="Kebbi">Kebbi</option>
+            <option value="Kogi">Kogi</option>
+            <option value="Kwara">Kwara</option>
+            <option value="Lagos">Lagos</option>
+            <option value="Nasarawa">Nasarawa</option>
+            <option value="Niger">Niger</option>
+            <option value="Ogun">Ogun</option>
+            <option value="Ondo">Ondo</option>
+            <option value="Osun">Osun</option>
+            <option value="Oyo">Oyo</option>
+            <option value="Plateau">Plateau</option>
+            <option value="Rivers">Rivers</option>
+            <option value="Sokoto">Sokoto</option>
+            <option value="Taraba">Taraba</option>
+            <option value="Yobe">Yobe</option>
+            <option value="Zamfara">Zamfara</option>
+          </select>
+        </div>
+
+        <div>
+          <label>Name of Sector</label>
+          <select name="sector" id="sector">
+            <option value="Education Sector">Education Sector</option>
+            <option value="Healthcare sector">Healthcare sector</option>
+            <option value="Banking & Finance Sector">
+              Banking & Finance Sector
+            </option>
+            <option value="Petroleum sector">Petroleum sector</option>
+            <option value="Industry, Trade & Investment sector">
+              Industry, Trade & Investment sector
+            </option>
+            <option value="Construction & Engineering sector">
+              Construction & Engineering sector
+            </option>
+            <option value="Mass Communication sector">
+              Mass Communication sector
+            </option>
+            <option value="Information & Communication Technology (ICT) sector">
+              Information & Communication Technology (ICT) sector
+            </option>
+            <option value="Entertainment Sector">Entertainment Sector</option>
+            <option value="Public Service Sector">Public Service Sector</option>
+            <option value="Transport & Aviation Sector">
+              Transport & Aviation Sector
+            </option>
+            <option value="Legal & Jurisprudence Sector">
+              Legal & Jurisprudence Sector
+            </option>
+            <option value="Sports Sector">Sports Sector</option>
+          </select>
+        </div>
+        <br />
+        <div>
+          <label>Names of Your Nominees & their accomplishments:</label>
+        </div>
+        <div>
+          <label> Nominee One </label>
           <input
-            name="first-name"
+            name="nominee-one"
             type="text"
-            placeholder="Enter your first name"
+            placeholder="Enter the nominee"
           />
         </div>
         <div>
-          <label> Surname </label>
-          <input name="surname" type="text" placeholder="Enter your surname" />
-        </div>
-        <div>
-          <label> Email </label>
+          <label> Nominee One's Accomplishment </label>
           <input
-            name="email"
-            type="email"
-            placeholder="Provide your email address"
+            name="nominee-one-accomplishment"
+            type="text"
+            placeholder="Enter the nominee's accomplishment"
           />
         </div>
         <div>
-          <label> Phone Number </label>
+          <label> Nominee Two </label>
+          <input
+            name="nominee-two"
+            type="text"
+            placeholder="Enter the nominee"
+          />
+        </div>
+        <div>
+          <label> Nominee Two's Accomplishment </label>
+          <input
+            name="nominee-two-accomplishment"
+            type="text"
+            placeholder="Enter the nominee's accomplishment"
+          />
+        </div>
+        <div>
+          <label> Nominee Three </label>
+          <input
+            name="nominee-three"
+            type="text"
+            placeholder="Enter the nominee"
+          />
+        </div>
+        <div>
+          <label> Nominee Three's Accomplishment </label>
+          <input
+            name="nominee-three-accomplishment"
+            type="text"
+            placeholder="Enter the nominee's accomplishment"
+          />
+        </div>
+        <div>
+          <label> Nominee Four </label>
+          <input
+            name="nominee-four"
+            type="text"
+            placeholder="Enter the nominee"
+          />
+        </div>
+        <div>
+          <label> Nominee Four's Accomplishment </label>
+          <input
+            name="nominee-four-accomplishment"
+            type="text"
+            placeholder="Enter the nominee's accomplishment"
+          />
+        </div>
+        <div>
+          <label> Nominee Five </label>
+          <input
+            name="nominee-five"
+            type="text"
+            placeholder="Enter the nominee"
+          />
+        </div>
+        <div>
+          <label> Nominee Five's Accomplishment </label>
+          <input
+            name="nominee-five-accomplishment"
+            type="text"
+            placeholder="Enter the nominee's accomplishment"
+          />
+        </div>
+        <div>
+          <label>Your Name</label>
+          <input name="name" type="text" placeholder="Enter your name" />
+        </div>
+        <div>
+          <label>Your Phone Number</label>
           <input
             name="phone-number"
             type="tel"
-            placeholder="Include your contact number"
+            placeholder="Enter your phone number"
           />
-        </div>
-        <div>
-          <label> Address </label>
-          <input
-            name="address"
-            type="tel"
-            placeholder="Enter your street address"
-          />
-        </div>
-        <div>
-          <label> Position Applied For </label>
-          <select name="position-applied-for">
-            <option value="accountant">Accountant</option>
-            <option value="assistant">Assistant</option>
-            <option value="legal-consultant">Legal Consultant</option>
-          </select>
-        </div>
-        <div>
-          <label> Additional Information (Notes, questions or comments) </label>
-          <textarea
-            rows="5"
-            placeholder="Any additional information or comments"
-            name="additional-info"
-          ></textarea>
         </div>
         <button type="submit">Apply</button>
       </form>
+    </div>
+    <div class="appreciation-section">
+      <p>Thank you for your responses.</p>
+      <p>Management</p>
     </div>
     <script type="module" src="./main.js"></script>
   </body>
