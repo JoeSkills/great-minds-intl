@@ -193,6 +193,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
+  position: relative;
 }
 
 .about-bg-lighter a {
@@ -359,6 +360,7 @@ body {
   text-align: center;
   margin-top: 1.5rem;
 }
+
 .accordion {
   margin-top: 3rem;
 }
@@ -412,7 +414,7 @@ body {
   gap: 0.625rem;
 }
 .contact-us p {
-  color: #fff;
+  color: #d4af37;
   font-size: 1.125rem;
   text-transform: uppercase;
   font-weight: 700;
@@ -421,6 +423,7 @@ body {
   display: block;
   font-weight: 400;
   font-size: 1rem;
+  color: #fff;
 }
 .contact-us label {
   color: fff;
@@ -458,6 +461,10 @@ body {
   font-size: 1rem;
   margin-top: 0.9375rem;
   font-weight: 500;
+}
+
+.contact-us button {
+  cursor: pointer;
 }
 
 .footer {
