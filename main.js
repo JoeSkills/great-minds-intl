@@ -32,3 +32,16 @@ for (let i = 0; i < accordion.length; i++) {
     accordion[i].classList.toggle('active');
   });
 }
+
+document.addEventListener('scroll', () => {
+  const navigationBar = document.querySelector('.navbar');
+  const mobileMenuNav = document.querySelector('.mobile-nav-menu');
+
+  if (window.scrollY > 0) {
+    navigationBar.classList.add('scrolled');
+    mobileMenuNav.classList.add('scrolled');
+  } else {
+    navigationBar.classList.remove('scrolled');
+    mobileMenuNav.classList.remove('scrolled');
+  }
+});

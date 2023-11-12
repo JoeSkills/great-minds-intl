@@ -17,7 +17,7 @@ body {
 }
 
 .navbar {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   width: 100%;
@@ -86,6 +86,19 @@ body {
   transition: color 0.3s;
 }
 
+.navbar.scrolled .logo,
+.navbar.scrolled .logo > span,
+.navbar.scrolled .navigation .navigation-link {
+  color: #000;
+  text-shadow: none;
+}
+
+.navbar.scrolled {
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 2px 28px #0000000f;
+}
+
 .header {
   width: 100%;
   height: 100vh;
@@ -106,11 +119,11 @@ body {
 
 .header-contact-us-btn {
   margin-right: 2rem;
-  background-color: white;
+  background-color: #1c1c1f;
   padding: 1rem;
   display: inline-block;
   text-decoration: none;
-  color: inherit;
+  color: #d4af37;
 }
 
 .header-contact-us-btn span {
@@ -590,6 +603,18 @@ body {
   }
 
   .mobile-nav-menu {
+    color: #fff;
+  }
+
+  .navbar.scrolled .logo > span {
+    -webkit-text-stroke-color: transparent;
+  }
+
+  .mobile-nav-menu.scrolled {
+    color: #000;
+  }
+
+  .navbar.scrolled .navigation .navigation-link {
     color: #fff;
   }
 
