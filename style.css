@@ -166,7 +166,7 @@ body {
   width: 100%;
   display: flex;
   padding-top: 6.25rem;
-  background-color: #333;
+  background-color: #222;
 }
 
 .about-bg-lighter h2 {
@@ -518,8 +518,8 @@ body {
 }
 
 .footer .social-media-links > div > a {
-  background-color: #5e5d5d;
-  color: white;
+  background-color: #141414;
+  color: #d4af37;
   display: inline-block;
   padding: 0.625rem 0.9375rem;
   margin-top: 0.9375rem;
