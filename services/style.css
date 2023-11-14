@@ -119,7 +119,7 @@ body {
 
 .banner {
   position: absolute;
-  top: 35%;
+  top: 12.5rem;
   z-index: 100;
   text-align: center;
   width: 100%;

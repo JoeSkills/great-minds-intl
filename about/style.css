@@ -16,6 +16,35 @@ body {
   background-color: #141414;
 }
 
+.to-top {
+  background-color: #d4af37;
+  color: #141414;
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 2rem;
+  bottom: 1rem;
+  transition: all 0.4s;
+  z-index: 400;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.to-top.active {
+  bottom: 2rem;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.feather-24 {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
 .navbar {
   position: fixed;
   left: 0;
@@ -119,7 +148,7 @@ body {
 
 .banner {
   position: absolute;
-  top: 35%;
+  top: 12.5rem;
   z-index: 100;
   text-align: center;
   width: 100%;
@@ -449,10 +478,10 @@ body {
   .about-bg-lighter {
     padding-inline: 0.9375rem;
     padding-bottom: 6.25rem;
-    text-align: center;
+    text-align: left;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
   }
 
   .about-bg-lighter p,

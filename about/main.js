@@ -4,6 +4,7 @@ const menuToggleBtn = document.querySelector('.mobile-nav-menu');
 const menuIcon = document.querySelector('.feather-menu');
 const closeIcon = document.querySelector('.feather-close');
 const navigationMenu = document.querySelector('.navigation');
+const toTop = document.querySelector('.to-top');
 
 feather.replace();
 
@@ -23,5 +24,13 @@ document.addEventListener('scroll', () => {
   } else {
     navigationBar.classList.remove('scrolled');
     mobileMenuNav.classList.remove('scrolled');
+  }
+});
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 100) {
+    toTop.classList.add('active');
+  } else {
+    toTop.classList.remove('active');
   }
 });
