@@ -16,28 +16,6 @@ body {
   background-color: #141414;
 }
 
-.golden-hearts-survey-notification {
-  position: fixed;
-  bottom: 18.75rem;
-  right: 1rem;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  background-color: #000;
-  font-weight: 700;
-  padding: 0.625rem;
-  width: 9.375rem;
-  color: #d4af37;
-  text-align: center;
-  z-index: 500;
-  border-bottom: #ccc solid 0.0625rem;
-  border-left: #ccc solid 0.0625rem;
-}
-
-.golden-hearts-survey-notification:hover {
-  color: #ccc;
-  cursor: pointer;
-}
-
 .to-top {
   background-color: #d4af37;
   color: #141414;
