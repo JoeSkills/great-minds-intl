@@ -98,6 +98,21 @@ h4.form-heading {
   padding: 1.25rem;
 }
 
+.back-to-home {
+  background-color: #d4af37;
+  color: #141414;
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  z-index: 400;
+}
+
 @media screen and (max-width: 680px) {
   .application-form {
     width: 100%;
@@ -105,5 +120,6 @@ h4.form-heading {
 
   .application-form-wrapper {
     padding: 0;
+    padding-top: 3.125rem;
   }
 }

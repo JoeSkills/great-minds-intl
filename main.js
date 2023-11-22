@@ -8,7 +8,10 @@ const menuToggleBtn = document.querySelector('.mobile-nav-menu');
 const menuIcon = document.querySelector('.feather-menu');
 const closeIcon = document.querySelector('.feather-close');
 const navigationMenu = document.querySelector('.navigation');
+const navigationLink = document.querySelectorAll('.navigation-link');
 const toTop = document.querySelector('.to-top');
+const navigation = document.querySelector('.navigation');
+const surveyPopup = document.querySelector('.survey-popup-link');
 
 const swiper = new Swiper('.swiper', {
   autoplay: {
@@ -25,6 +28,14 @@ menuToggleBtn.addEventListener('click', () => {
   closeIcon.classList.toggle('hidden');
   navigationMenu.classList.toggle('hidden');
 });
+
+for (let i = 0; i < navigationLink.length; i++) {
+  navigationLink[i].addEventListener('click', () => {
+    menuIcon.classList.toggle('hidden');
+    closeIcon.classList.toggle('hidden');
+    navigationMenu.classList.toggle('hidden');
+  });
+}
 
 const accordion = document.getElementsByClassName('contentBx');
 
@@ -50,7 +61,9 @@ document.addEventListener('scroll', () => {
 window.addEventListener('scroll', () => {
   if (window.scrollY > 100) {
     toTop.classList.add('active');
+    surveyPopup.classList.add('active');
   } else {
     toTop.classList.remove('active');
+    surveyPopup.classList.remove('active');
   }
 });

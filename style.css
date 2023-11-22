@@ -34,6 +34,34 @@ body {
   pointer-events: none;
 }
 
+a.survey-popup-link {
+  background-color: #d4af37;
+  color: #141414;
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 2rem;
+  bottom: 10rem;
+  transition: all 0.4s;
+  z-index: 400;
+  opacity: 0;
+  pointer-events: none;
+}
+a.survey-popup-link.active {
+  bottom: 11rem;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+a.survey-popup-link > img {
+  width: 1.875rem;
+  height: 1.875rem;
+}
+
 .to-top.active {
   bottom: 2rem;
   opacity: 1;
@@ -45,7 +73,7 @@ body {
   left: 0;
   top: 0;
   width: 100%;
-  height: 10rem;
+  height: 8rem;
   z-index: 200;
   display: flex;
   justify-content: space-between;
@@ -231,10 +259,6 @@ body {
   width: fit-content;
   margin-left: 5rem;
   margin-top: 2.1875rem;
-}
-
-.about-bg-lighter a:hover {
-  text-decoration: underline;
 }
 
 .about-bg-darker {
@@ -632,6 +656,7 @@ body {
   .navbar {
     padding: 0 1.8rem;
     height: 5rem;
+    z-index: 500;
   }
   .banner h1 {
     font-size: 1.5rem;
